@@ -3,7 +3,7 @@ package ro.java.ctrln;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ExceptionHandling {
+public class ExceptionHandlingOneCatch {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class ExceptionHandling {
                 System.out.println("Inputul de la tastatura este invalid");
                 scanner.next(); // oprest loop ul de mai sus si orteaza citirea de la tastatura a altui input
                 System.out.println("Scrie alt input");
-                
+
             }
             //counter++; Counter incrementa in pozitia acastava numara 10 numere indiferent daca sunt valide sau nu
 
