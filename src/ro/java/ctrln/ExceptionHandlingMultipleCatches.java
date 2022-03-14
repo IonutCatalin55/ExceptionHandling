@@ -30,6 +30,12 @@ public class ExceptionHandlingMultipleCatches {
             } catch (IllegalStateException ise) { // pride a doua exceptie ise
                 System.out.println("Scanerul este inchis! Nu avem cum sa mai citim numere!");
                 break; // inchide while si ne scoate din bucla
+            } finally {                                           //acest cod se executa mereu
+                System.out.println("Acest cod se executa mereu");// //acest cod se executa mereu
+                if (counter == 5){ //daca counter == 5
+                    scanner.close(); //inchide scanerul
+                    break; //opreste executia while
+                }
             }
             //counter++; Counter incrementa in pozitia acastava numara 10 numere indiferent daca sunt valide sau nu
 
