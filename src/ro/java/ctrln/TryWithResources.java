@@ -18,6 +18,6 @@ public class TryWithResources {
             //scanner.close();      ==> scanner nu exista decat in interiorul blocului try scopul resusei scanner este doar in interiorul blocului try
             // asemanator indexului in  FOR exista dor in interiorul lui For
             // scaner ese inchis de JAVA dupa folosirea in try pt a preveni MemoryLeacks
-        }System.gc();
+        }
     }
 }
